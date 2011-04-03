@@ -11,7 +11,7 @@ To get an idea of how this all works, take a look at the sample <code>roookies.s
 
 For more information about how to use SCSS and Compass, please consult the [Saas](http://sass-lang.com/) and [Compass](http://compass-style.org) web sites.
 
-To get started with this project, you will need to follow the instructions below.
+You can try out the (unthemed) application [here](http://senchalearn.github.com/roookies/). To run the project locally, you will need to follow the instructions below.
 
 
 Installing Sencha Touch
