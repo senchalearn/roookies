@@ -13,16 +13,22 @@
 
 
         <!-- EITHER use the link below if you do not have the Sencha Touch SDK installed locally -->
-            <link href="http://dev.sencha.com/deploy/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
+            <link id="style" href="http://dev.sencha.com/deploy/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
         <!-- OR use the link below if you have the Sencha Touch SDK installed locally -->
         <!--
-            <link href="lib/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
+            <link id="style" href="lib/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
         -->
-        <!-- OR use the links below if you want the sample custom theme -->
+        <!-- OR use the links below if you want the sample custom theme* -->
         <!--
             <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
-            <link href="theming/roookies.css" rel="stylesheet" type="text/css" />
+            <link id="style" href="theming/roookies.css" rel="stylesheet" type="text/css" />
         -->
+        <!-- OR add ?theming to the end of the URL to replace the default with the sample custom theme: -->
+        <script type="text/javascript">
+            if (location.search=='?theming') {
+                document.getElementById('style').setAttribute('href', 'theming/roookies.css');
+            }
+        </script>
 
 
         <script type="text/javascript" src="app/app.js"></script>
