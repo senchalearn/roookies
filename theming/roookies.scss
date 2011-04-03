@@ -1,0 +1,129 @@
+$base-color: #709e3f;
+$include-default-icons: false;
+
+@import 'sencha-touch/default/all';
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-layout;
+@include sencha-loading-spinner;
+
+@include pictos-iconmask('user');
+@include pictos-iconmask('favorites');
+@include pictos-iconmask('team');
+
+.x-toolbar-title {
+  font-family: 'Pacifico', arial, serif;
+  font-weight: normal;
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+.x-list {
+  @include background-gradient(#333, 'recessed');
+}
+
+.shot {
+  padding: 8px 0;
+  border-bottom: 1px solid #a37229;
+  border-top: 1px solid #f3ce96;
+
+  img.shot-image {
+    display:block;
+    padding: 8px;
+    margin: 0px auto;
+    border: 1px solid #666;
+    -webkit-box-shadow: 0 0 4px rgba(#333, .5);
+    background:#eee;
+    clear:both;
+    width:304px;
+  }
+
+  .title {
+    margin: 0px auto 8px;
+    width: 304px;
+    text-shadow: 0 1px 0 rgba(#fff, .5) ;
+    h2 {
+      font-size:1.3em;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .player {
+      color:#ce2e41;
+    }
+
+  }
+}
+
+.comment {
+  padding: 8px;
+  border-bottom: 1px solid #a37229;
+  border-top: 1px solid #f3ce96;
+  text-shadow: 0 1px 0 rgba(#fff, .5);
+  min-height: 96px;
+  .player {
+    color:#ce2e41;
+  }
+}
+
+.shot, .comment {
+  background:inline-image("wood.jpg", 'image/jpg');
+}
+
+.shot-meta {
+  @include background-gradient(#333, 'recessed');
+  overflow:hidden;
+  text-align:center;
+  line-height:2em;
+
+  span {
+    margin:0 .5em;
+    color:#fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 1);
+
+    img {
+      -webkit-mask-size: 1.2em;
+      width: 1.2em;
+      height: 1.2em;
+      background-color:#fff;
+      margin-right: .25em;
+      vertical-align: text-bottom;
+      @include background-gradient(#aaa, $base-gradient);
+    }
+
+    &.views img {
+      -webkit-mask-image: theme_image($theme-name, "pictos/look.png");
+    }
+
+    &.likes img {
+      -webkit-mask-image: theme_image($theme-name, "pictos/heart.png");
+    }
+
+    &.rebounds img {
+      -webkit-mask-image: theme_image($theme-name, "pictos/shuffle.png");
+    }
+
+    &.comments img {
+      -webkit-mask-image: theme_image($theme-name, "pictos/chat1.png");
+      @include background-gradient($base-color, $base-gradient);
+    }
+
+  }
+
+  .noun {
+    display:none;
+  }
+
+}
+
+.avatar {
+  border-color: #333;
+  clear:both;
+  float:left;
+  margin:0 8px 8px 0;
+}
