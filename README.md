@@ -9,7 +9,7 @@ We recommend that images are included inline in the generated CSS (as they are i
 
 To get an idea of how this all works, take a look at the sample <code>roookies.scss</code> (and the resulting <code>roookies.css</code>) files that are shipped in the <code>theming</code> directory of this project. This theme was crafted by Jen Gordon of the awesome [Tapptics](http://www.tapptics.com/)
 
-For more information about how to use SCSS and Compass, please consult the [Saas](http://sass-lang.com/) and [Compass](http://compass-style.org) web sites.
+For more information about how to use SCSS and Compass, please consult the [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org) web sites.
 
 You can try out the (unthemed) application [here](http://senchalearn.github.com/roookies/), or the sample custom theme [here](http://senchalearn.github.com/roookies/?theming).
 
