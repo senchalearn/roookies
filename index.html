@@ -3,33 +3,31 @@
     <head>
         <title>Roookies</title>
 
+        <script src="http://dev.sencha.com/deploy/touch/sencha-touch.js" type="text/javascript"></script>
 
-        <!-- EITHER use the script below if you do not have the Sencha Touch SDK installed locally -->
-            <script src="http://dev.sencha.com/deploy/touch/sencha-touch.js" type="text/javascript"></script>
-        <!-- OR use the script below if you have the Sencha Touch SDK installed locally -->
-        <!--
-            <script src="lib/touch/sencha-touch.js" type="text/javascript"></script>
-        -->
-
-
-        <!-- EITHER use the link below if you do not have the Sencha Touch SDK installed locally -->
-            <link id="style" href="http://dev.sencha.com/deploy/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
-        <!-- OR use the link below if you have the Sencha Touch SDK installed locally -->
-        <!--
-            <link id="style" href="lib/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
-        -->
-        <!-- OR use the links below if you want the sample custom theme* -->
-        <!--
-            <link id="style" href="theming/roookies.css" rel="stylesheet" type="text/css" />
-        -->
-        <!-- OR add ?theming to the end of the URL to replace the default with the sample custom theme: -->
         <script type="text/javascript">
-            if (location.search=='?theming') {
-                document.getElementById('style').setAttribute('href', 'theming/roookies.css');
-            }
-        </script>
 
-        <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
+            var qs = {},
+                re = /([^&=]+)=([^&]+)?/g; // naive, good enough
+            while (m = re.exec(location.search.substr(1))) {
+                qs[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+            }
+
+            if (qs['style']=='demo') {
+                qs['style'] = 'theming/roookies.css';
+                qs['font'] = 'Pacifico';
+            }
+
+            if (!(style = qs['style'])) {
+                style = 'http://dev.sencha.com/deploy/touch/resources/css/sencha-touch.css';
+            }
+            document.write('<link id="style" rel="stylesheet" type="text/css" href="' + style + '"/>');
+
+            if (font = qs['font']) {
+                document.write('<link id="font" rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=' + font + '"/>');
+            }
+
+        </script>
 
 
         <script type="text/javascript" src="app/app.js"></script>
