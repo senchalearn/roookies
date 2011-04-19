@@ -1,19 +1,19 @@
 Sencha Touch Theming Contest, April 2011
 ========================================
 
-This project is the application to be used in the Sencha Touch Theming Contest. By default it uses the standard Sencha Touch theme, but it also includes a sample custom theme which can be easily switched in by altering the <code>index.html</code> file.
+This project is the application to be used in the Sencha Touch Theming Contest. By default it uses the standard Sencha Touch theme, but it also includes a sample custom theme which can be easily switched in.
 
-Entries to the competition should comprise a single CSS file only: no changes are allowed to the JavaScript of the application. (Although we might allow you to pull in a different web font in the <code>&lt;head&gt;</code> of <code>index.html</code>...)
+Read more about the contest [here](http://www.sencha.com/theme-contest/), and be sure to read [the rules](http://www.sencha.com/theme-contest/contest-rules/) too.
 
-We recommend that images are included inline in the generated CSS (as they are in the example), simply so that the judges can easily test them without having to extract directories of additional resources. However, you may also wish to submit your SCSS source too.
+You can try out the (unthemed) application live [here](http://senchalearn.github.com/roookies/), or with the sample custom theme [here](http://senchalearn.github.com/roookies/?style=demo). Think you can do better?
+
+Entries to the competition should comprise a single CSS file only: no changes are allowed to the JavaScript of the application. We recommend that images are included inline in the generated CSS (as they are in the example), simply so that the judges can easily test them without having to extract directories of additional resources. However, you may also wish to submit your SCSS source too, to show us how elegant your Sass is.
 
 To get an idea of how this all works, take a look at the sample <code>roookies.scss</code> (and the resulting <code>roookies.css</code>) files that are shipped in the <code>theming</code> directory of this project. This theme was crafted by Jen Gordon of the awesome [Tapptics](http://www.tapptics.com/)
 
 For more information about how to use SCSS and Compass, please consult the [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org) web sites.
 
-You can try out the (unthemed) application [here](http://senchalearn.github.com/roookies/), or the sample custom theme [here](http://senchalearn.github.com/roookies/?theming).
-
-To run the project locally, you will need to follow the instructions below.
+To run the project locally and to build CSS files yourself, you will need to follow the instructions below.
 
 
 Installing Sencha Touch
@@ -56,3 +56,19 @@ Use the contents of the <code>theming</code> folder for creating your custom the
         > compass compile roookies.scss
 
 7.  Refresh the application to see the changes.
+
+
+Submitting your entry
+---------------------
+
+To submit an entry, you'll need to provide at least an external link to your resulting CSS file. You can try out your CSS on our live application by altering the <code>style</code> parameter of the URL. For example:
+
+    http://senchalearn.github.com/roookies/?style=http://mysite.com/awesome.css
+
+You might also want to use a custom font face in your theme, and in that case, you can provide the name of a [Google web font](http://www.google.com/webfonts). Again, do this using the query string:
+
+    http://senchalearn.github.com/roookies/?style=http://mysite.com/awesome.css&font=bangers
+
+To submit your theme to the competition, use [this form](https://spreadsheets.google.com/a/extjs.com/spreadsheet/viewform?formkey=dDNEbzA5N2UyckhsaGxESjR1WlhZNHc6MQ), and be sure to get your entry in before the deadline, 2nd May 2011.
+
+Good luck!
