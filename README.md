@@ -15,7 +15,7 @@ For more information about how to use SCSS and Compass, please consult the [Sass
 
 Other resources that will help you include:
 
-    [Sass and Compass Ð The Next Wave in Styling and Theming](http://vimeo.com/18084338)
+    [Sass and Compass - The Next Wave in Styling and Theming](http://vimeo.com/18084338)
     [An introduction to theming Sencha Touch](http://www.sencha.com/blog/an-introduction-to-theming-sencha-touch/)
     [Theming Sencha Touch](http://vimeo.com/17879651)
     [Sencha Touch SASS Variables and Mixins Reference](http://dev.sencha.com/deploy/touch/docs/theme/)
