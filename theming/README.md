@@ -1,9 +1,9 @@
-Creating your custom theme
---------------------------
+Creating a custom theme
+-----------------------
 
 Use the contents of the <code>theming</code> folder for creating your custom theme for the Roookies application.
 
-<string>Important:</strong> the <code>themes</code> directory here is an extracted part of the Sencha Touch SDK, placed here for your convenience to get started quickly with your theming work. This directory is distributed under the (same licence)[http://dev.sencha.com/deploy/touch/license.txt] as the Sencha Touch SDK as a whole, which is available for free download [here](http://sencha.com/products/touch).
+<string>Important:</strong> the <code>themes</code> directory includes a copy of part of the Sencha Touch SDK, placed here for your convenience to get started quickly with your theming work. This directory is distributed under the (same licence)[http://dev.sencha.com/deploy/touch/license.txt] as the [Sencha Touch SDK](http://sencha.com/products/touch) as a whole.
 
 To create your custom theme for the Roookies app:
 

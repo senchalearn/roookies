@@ -13,34 +13,32 @@ To get an idea of how this all works, take a look at the sample <code>roookies.s
 
 For more information about how to use SCSS and Compass, please consult the [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org) web sites.
 
-To run the project locally and to build CSS files yourself, you will need to follow the instructions below.
+Other resources that will help you include:
+
+    [Sass and Compass Ð The Next Wave in Styling and Theming](http://vimeo.com/18084338)
+    [An introduction to theming Sencha Touch](http://www.sencha.com/blog/an-introduction-to-theming-sencha-touch/)
+    [Theming Sencha Touch](http://vimeo.com/17879651)
+    [Sencha Touch SASS Variables and Mixins Reference](http://dev.sencha.com/deploy/touch/docs/theme/)
 
 
-Installing Sencha Touch
+Creating a custom theme
 -----------------------
-
-Download the Sencha Touch v1.1 SDK from [here](http://www.sencha.com/products/touch/download/) and place (or symlink) the unzipped directory, renamed to <code>touch</code>, into the <code>lib</code> folder.
-
-Then ensure that the <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags in the <code>index.html</code> of the application itself point to the correct locations for the local JavaScript and CSS resources:
-
-    <script src="lib/touch/sencha-touch.js" type="text/javascript"></script>
-    <link  href="lib/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
-
-You should then be able to test that the application works by opening the <code>index.html</code> file in a WebKit desktop browser. To try the application on a mobile simulator (or real handset), you will have to deploy this directory onto a local (or external) web server.
-
-
-Creating your custom theme
---------------------------
 
 Use the contents of the <code>theming</code> folder for creating your custom theme for the Roookies application.
 
-1.  Uncomment the style <code>&lt;link&gt;</code> in the app's <code>index.html</code> to link to this new CSS:
+<string>Important:</strong> the <code>themes</code> directory includes a copy of part of the Sencha Touch SDK, placed here for your convenience to get started quickly with your theming work. This directory is distributed under the (same licence)[http://dev.sencha.com/deploy/touch/license.txt] as the [Sencha Touch SDK](http://sencha.com/products/touch) as a whole.
 
-        <link href="theming/roookies.css" rel="stylesheet" type="text/css" />
+To create your custom theme for the Roookies app:
 
-2.  Remove the existing <code>&lt;link&gt;</code> to <code>sencha-touch.css</code> (the <code>roookies.css</code> file includes the entire styling for the app)
+1.  Add a <code>style</code> query string to the app's URL to reference a custom CSS file:
 
-3.  Refresh the application. You should now see green and wood.
+        http://myserver/roookies/?style=theming/roookies.css
+
+2.  Add an additional <code>font</code> parameter if you need to reference a Google font by name:
+
+        http://myserver/roookies/?style=theming/roookies.css&font=Perfecto
+
+3.  Refresh the application. You should now see the green and wood of (Jen Gordon's)[http://tapptics.com] sample theme.
 
 4.  To compile your own theme, ensure you have Compass 0.11.beta.3 (or later) installed:
 
@@ -49,13 +47,35 @@ Use the contents of the <code>theming</code> folder for creating your custom the
         > compass -v
         Compass 0.11.beta.3
 
-5.  Make changes to the <code>roookies.scss</code> file
+5.  Make changes to the <code>roookies.scss</code> file (or a copy of your own)
 
 6.  Run compass to compile the CSS:
 
         > compass compile roookies.scss
 
 7.  Refresh the application to see the changes.
+
+
+You will need to submit the resulting CSS file to enter the theming competition. However, feel free to submit the Sass (.scss) file too if you want to show us how clever you've been!
+
+
+
+Installing Sencha Touch
+-----------------------
+
+By default, the Roookies app links to online versions of the JavaScript and CSS files, and uses the query string of the app to switch CSS. However, you may also want to download the Sencha Touch SDK and link to those files locally - this means you will be able to work on the app offline, and you get the benefits of the documentation and examples present in the SDK.
+
+Download the Sencha Touch v1.1 SDK from [here](http://www.sencha.com/products/touch/download/) and place (or symlink) the unzipped directory, renamed to <code>touch</code>, into the <code>lib</code> folder.
+
+You can alter the <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags in the <code>index.html</code> of the application itself point to the correct locations for the local JavaScript and CSS resources if you wish:
+
+    <script src="lib/touch/sencha-touch.js" type="text/javascript"></script>
+    <link  href="lib/touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
+
+(If you link to your CSS files explicitly like this, you should remove the <code>&lt;script&gt;</code> block that writes them in based on the query string).
+
+You should then be able to test that the application works by opening the <code>index.html</code> file in a WebKit desktop browser. To try your local copy of the application on a mobile simulator (or real handset), you will have to deploy this directory onto a local (or external) web server.
+
 
 
 Submitting your entry
@@ -65,10 +85,10 @@ To submit an entry, you'll need to provide at least an external link to your res
 
     http://senchalearn.github.com/roookies/?style=http://mysite.com/awesome.css
 
-You might also want to use a custom font face in your theme, and in that case, you can provide the name of a [Google web font](http://www.google.com/webfonts). Again, do this using the query string:
+If you have used a custom font face in your theme, don't forget to provide the name of the [Google web font](http://www.google.com/webfonts) used. Again, check this works using the query string:
 
     http://senchalearn.github.com/roookies/?style=http://mysite.com/awesome.css&font=bangers
 
-To submit your theme to the competition, use [this form](https://spreadsheets.google.com/a/extjs.com/spreadsheet/viewform?formkey=dDNEbzA5N2UyckhsaGxESjR1WlhZNHc6MQ), and be sure to get your entry in before the deadline, 2nd May 2011.
+To submit your theme to the competition, use [this form](https://spreadsheets.google.com/a/extjs.com/spreadsheet/viewform?formkey=dDNEbzA5N2UyckhsaGxESjR1WlhZNHc6MQ) to provide both the CSS URL and the font name, and be sure to get your entry in before the deadline, 2nd May 2011.
 
 Good luck!
