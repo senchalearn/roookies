@@ -7,8 +7,6 @@ Read more about the contest [here](http://www.sencha.com/theme-contest/), and be
 
 You can try out the (unthemed) application live [here](http://senchalearn.github.com/roookies/), or with the sample custom theme [here](http://senchalearn.github.com/roookies/?style=demo). Think you can do better?
 
-Entries to the competition should comprise a single CSS file only: no changes are allowed to the JavaScript of the application. We recommend that images are included inline in the generated CSS (as they are in the example), simply so that the judges can easily test them without having to extract directories of additional resources. However, you may also wish to submit your SCSS source too, to show us how elegant your Sass is.
-
 To get an idea of how this all works, take a look at the sample <code>roookies.scss</code> (and the resulting <code>roookies.css</code>) files that are shipped in the <code>theming</code> directory of this project. This theme was crafted by Jen Gordon of the awesome [Tapptics](http://www.tapptics.com/)
 
 For more information about how to use SCSS and Compass, please consult the [Sass](http://sass-lang.com/) and [Compass](http://compass-style.org) web sites.
@@ -19,6 +17,9 @@ Other resources that will help you include:
 *   [An introduction to theming Sencha Touch](http://www.sencha.com/blog/an-introduction-to-theming-sencha-touch/)
 *   [Theming Sencha Touch](http://vimeo.com/17879651)
 *   [Sencha Touch SASS Variables and Mixins Reference](http://dev.sencha.com/deploy/touch/docs/theme/)
+*   [Contest help in the Sencha forums](http://www.sencha.com/forum/showthread.php?130834-Sencha-Touch-Theme-Contest-April-2011)
+
+Entries to the competition should comprise a single CSS file only: no changes are allowed to the JavaScript of the application. We recommend that images are included inline in the generated CSS (as they are in the example), simply so that the judges can easily test them without having to extract directories of additional resources. However, you may also wish to submit your SCSS source too, to show us how elegant your Sass is.
 
 
 Creating a custom theme
