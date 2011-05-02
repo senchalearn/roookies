@@ -28,7 +28,10 @@
             document.write('<link id="style" rel="stylesheet" type="text/css" href="' + style + '"/>');
 
             if (font = qs['font']) {
-                document.write('<link id="font" rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=' + font + '"/>');
+                var fonts = font.split(',');
+                for (var f=0, l=fonts.length; f<l; f++) {
+                    document.write('<link id="font" rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=' + fonts[f] + '"/>');
+                }
             }
 
         </script>
