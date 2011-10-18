@@ -3,7 +3,7 @@ Creating a custom theme
 
 Use the contents of the <code>theming</code> folder for creating your custom theme for the Roookies application.
 
-<string>Important:</strong> the <code>themes</code> directory includes a copy of part of the Sencha Touch SDK, placed here for your convenience to get started quickly with your theming work. This directory is distributed under the (same licence)[http://dev.sencha.com/deploy/touch/license.txt] as the [Sencha Touch SDK](http://sencha.com/products/touch) as a whole.
+<string>Important:</strong> the <code>themes</code> directory includes a copy of part of the Sencha Touch SDK, placed here for your convenience to get started quickly with your theming work. This directory is distributed under the [same licence](http://dev.sencha.com/deploy/touch/license.txt) as the [Sencha Touch SDK](http://sencha.com/products/touch) as a whole.
 
 To create your custom theme for the Roookies app:
 
@@ -15,7 +15,7 @@ To create your custom theme for the Roookies app:
 
         http://myserver/roookies/?style=theming/roookies.css&font=Perfecto
 
-3.  Refresh the application. You should now see the green and wood of (Jen Gordon's)[http://tapptics.com] sample theme.
+3.  Refresh the application. You should now see the green and wood of [Jen Gordon's](http://tapptics.com) sample theme.
 
 4.  To compile your own theme, ensure you have Compass 0.11.beta.3 (or later) installed:
 
